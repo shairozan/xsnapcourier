@@ -350,3 +350,6 @@ This is the first open-source application I have run in a while, but feel free t
 ### License
 
 The XSnapCourier is open-sourced software licensed under the [MIT license](http://opensource.org/licenses/MIT)
+
+### License for Visuals
+This application was built with the [Metro Admin Theme](https://wrapbootstrap.com/theme/metro-admin-theme-metro-king-WB0GRG7H2), on an extended license purchased by the original author (Darrell Breeden). License number for original acquisition is 3db84235-f781-405e-82cb-0d49b020f601
