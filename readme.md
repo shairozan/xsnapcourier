@@ -16,11 +16,11 @@ Installation consists of a series of of steps that consite of the following:
 ## Package Installation and requirements
 
 Since XSC is written on top of Laravel, we have to basically meet [Laravels Requierments](http://laravel.com/docs/5.0/installation). For reference this contains a few key items:
-*PHP5
-*Mcrypt (PHP)
-*OpenSSL (PHP)
-*Mbstring (PHP)
-*Tokenizer (PHP)
+* PHP5
+* Mcrypt (PHP)
+* OpenSSL (PHP)
+* Mbstring (PHP)
+* Tokenizer (PHP)
 
 In Ubuntu (My preferred distro) this can be accomplished with the following:
 
@@ -30,8 +30,8 @@ As a note, you may have to actually enable Mcrypt with `php5enmod mcrypt` follow
 
 And custom to our application
 
-*Curl (Both system and php)
-*LDAP (PHP)
+* Curl (Both system and php)
+* LDAP (PHP)
 
 `sudo apt-get install curl php5-curl php5-ldap` followed by `service apache2 restart`
 
