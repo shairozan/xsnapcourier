@@ -8,7 +8,7 @@ class Snapshot extends Model {
 	protected $table = 'Snapshots';
 
 	static function snapshotsForVolume($volume_id){
-		return \DB::table('Snapshots')->where('volume_id',$volume_id)->count();
+		return \DB::table('Snapshots')->where('volume_id',$volume_id)->where('name','not like','%MANUAL%')->count();
 	}
 
 	static function allSnapshotsForVolume($volume_id){
@@ -20,11 +20,11 @@ class Snapshot extends Model {
 	}
 
 	static function newestSnapshotForVolume($volume_id){
-		return \DB::table('Snapshots')->where('volume_id',$volume_id)->where('scheduled',1)->orderBy('created_at','desc')->first();
+		return \DB::table('Snapshots')->where('volume_id',$volume_id)->where('name','not like','%MANUAL%')->where('scheduled',1)->orderBy('created_at','desc')->first();
 	}
 
 	static function oldestSnapshotForVolume($volume_id){
-		return \DB::table('Snapshots')->where('volume_id',$volume_id)->where('scheduled',1)->orderBy('created_at','asc')->first();
+		return \DB::table('Snapshots')->where('volume_id',$volume_id)->where('name','not like','%MANUAL%')->where('scheduled',1)->orderBy('created_at','asc')->first();
 	}
 
 	static function processSnapshot($volume_name, $volume_id, $snapshot_type = 'Scheduled'){
