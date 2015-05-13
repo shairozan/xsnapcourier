@@ -1,6 +1,6 @@
 ## XSnapCourier 
 
-XSnapCourier is a Laravel based snapshot scheduling application built for the EMC XtremIO all flash array. On top of doing basic snapshots, the application will also gather and report statistics on the cluster as a whole and any volumes you may add. The application is self-learning, and once you have updated the config file and run the crons for the first time, you should be good to to begin scheduling
+XSnapCourier is a Laravel based snapshot scheduling application built for the EMC XtremIO all flash array. On top of doing basic snapshots, the application will also gather and report statistics on the cluster as a whole and any volumes you may add. The application is self-learning, and once you have updated the config file and run the crons for the first time, you should be good to begin scheduling
 
 # Installation
 
