@@ -54,10 +54,10 @@ return [
 
 		'mysql' => [
 			'driver'    => 'mysql',
-			'host'      =>  'db1p.breedencontrol.com',
-			'database'  =>  'xsnapcourier',
-			'username'  =>  'shairozan',
-			'password'  =>  '3ntryl3v3l',
+			'host'      =>  'databasehostname',
+			'database'  =>  'databasename',
+			'username'  =>  'databaseuser',
+			'password'  =>  'databasepass',
 			'charset'   => 'utf8',
 			'collation' => 'utf8_unicode_ci',
 			'prefix'    => '',
